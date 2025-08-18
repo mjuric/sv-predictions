@@ -7,7 +7,7 @@ REQUIREMENTS
   - pandas
   - matplotlib
   - astropy
-  - astroquery.jplhorizons
+  - astroquery
   - ffmpeg
 
 These scripts require aditional files in order to run, to download them, take a look at the README file in the `../data` folder.
@@ -16,7 +16,7 @@ To find the instructions on how to use the scripts in this folder take a look at
 
 ## obs-viz.ipynb
 
-This script is made for visualizing Vera Rubin's science validation survey. To run this script you will need to put the `sv_20250729.db` file in your `../data` directory. To get this file, please cnsult the `README` file in the `../data` directory.
+This script is made for visualizing Vera Rubin's science validation survey. To run this script you will need to put the `sv_20250729.db` or any other pointing database file in your `../data` directory. To get this file, please cnsult the `README.md` file in the `../data` directory.
 After running, the script should output a movie titled: `sv-viz.mp4` in the `../results` directory. The generated frames of this movie are located in the `../results/sv-viz` directory.
 
 ## asteroid-viz.ipynb
