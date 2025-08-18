@@ -26,7 +26,7 @@ SETUP
 10. `os.environ["PATH"]` = you need to add your virtual environment to the path
 
 
-11. The colors file should have the following columns: `ObjID, H-r, u-r, g-r, i-r, z-r, y-r, GS`, if some columns are missing, `filefixer` and `format_converter` notebooks have common errors we ran into
+11. The colors file should have the following columns: `ObjID, H_r, u-r, g-r, i-r, z-r, y-r, GS`, if some columns are missing, `filefixer` and `format_converter` notebooks have common errors we ran into
 12. The orbits file should have the following columns: `ObjID, FORMAT, g, e, inc, node, argPeri, ma, epochMJD_TDB`
 13. Function `splitfile(input_file, output_dir, n)` splits the file. The arguments are: the csv file to be split, the output directory and the number of files it will be split into. The files it returns will be roughly the same size.
 
