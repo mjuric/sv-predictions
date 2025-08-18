@@ -15,20 +15,20 @@ You need to have Sorcha installed and it needs to be in the same environment as 
 We downloaded the real data from https://epyc.astro.washington.edu/~mjuric/mpsky-data-dev/catalogs/ which are the processed files originally from https://minorplanetcenter.net/ and the simulated data from https://www.canfar.net/storage/vault/list/AstroDataCitationDOI/CISTI.CANFAR/25.0062/data 
  
 SETUP
-1. Create a `Folder`
-2. Put the data inside the `Folder`
-3. The pointing database we used can be found here: https://survey-strategy.lsst.io/progress/sv_status/sv_20250729.html , you need to download it to the same `Folder`
+1. Create a new `Folder` in the simulation folder (if you have data for known asteroids and for simulated asteroids, we suggest you create one for each)
+2. Put the data you will use inside the `Folder`
+3. The pointing database we used can be found here: https://survey-strategy.lsst.io/progress/sv_status/sv_20250729.html , you need to download it to the same `Folder` 
 4. Inside the `Folder` create folders: colors, orbits and output
 5. In the output folder create folders: e2e and stats
-6. Open `main_simulator.ipynb`
-7. `BASE_DIR`is the  path to the `Folder`
-8. The expected names of the files we will use are in the form `{file_prefix}orbits.csv` and `{file_prefix}colors.csv`
-9. `os.environ["PATH"]` = you need to add your virtual environment to the path
+7. Open `main_simulator.ipynb`
+8. `BASE_DIR` is the  path to the `Folder`
+9. The expected names of the files we will use are in the form `{file_prefix}orbits.csv` and `{file_prefix}colors.csv`
+10. `os.environ["PATH"]` = you need to add your virtual environment to the path
 
 
-10. The colors file should have the following columns: `ObjID, H-r, u-r, g-r, i-r, z-r, y-r, GS`
-11. The orbits file should have the following columns: `ObjID, FORMAT, g, e, inc, node, argPeri, ma, epochMJD_TDB`
-12. Function `splitfile(input_file, output_dir, n)` splits the file. The arguments are: the csv file to be split, the output directory and the number of files it will be split into. The files it returns will be roughly the same size.
+11. The colors file should have the following columns: `ObjID, H-r, u-r, g-r, i-r, z-r, y-r, GS`
+12. The orbits file should have the following columns: `ObjID, FORMAT, g, e, inc, node, argPeri, ma, epochMJD_TDB`
+13. Function `splitfile(input_file, output_dir, n)` splits the file. The arguments are: the csv file to be split, the output directory and the number of files it will be split into. The files it returns will be roughly the same size.
 
 SIMULATION
 Function `run_sorcha(i)`:
