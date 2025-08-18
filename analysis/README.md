@@ -2,11 +2,11 @@
 
 The scripts inside this folder are used for analysing and visualizing the simulation data.
 
-## REQUIREMENTS
-  -numpy
-  -pandas
-  -matplotlib
-  -astropy
+REQUIREMENTS
+  - numpy
+  - pandas
+  - matplotlib
+  - astropy
 
 Some of these scripts require aditional files in order to run, to download them, take a look at the README file in the `../data` folder.
 
